@@ -6,6 +6,7 @@ use ArrayObject;
 use DeepCopy\DeepCopy;
 use DeepCopy\TypeFilter\Spl\ArrayObjectFilter;
 use PHPUnit\Framework\TestCase;
+use Prophecy\PhpUnit\ProphecyTrait;
 use Prophecy\Prophecy\ObjectProphecy;
 use RecursiveArrayIterator;
 
@@ -16,6 +17,8 @@ use RecursiveArrayIterator;
  */
 final class ArrayObjectFilterTest extends TestCase
 {
+    use ProphecyTrait;
+
     /**
      * @var ArrayObjectFilter
      */
@@ -28,7 +31,7 @@ final class ArrayObjectFilterTest extends TestCase
 
     protected function setUp(): void
     {
-        $this->copierProphecy = $this->prophesize(DeepCopy::class);
+        $this->copierProphecy = self::prophesize(DeepCopy::class);
         $this->arrayObjectFilter = new ArrayObjectFilter(
             $this->copierProphecy->reveal()
         );
