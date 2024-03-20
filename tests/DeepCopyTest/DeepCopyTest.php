@@ -397,7 +397,7 @@ class DeepCopyTest extends TestCase
     {
         $foo = new f003\Foo('foo');
         $foo->setProp('bar');
-        $object = new ArrayObject(['foo' => $foo, ArrayObject::ARRAY_AS_PROPS, \RecursiveArrayIterator::class]);
+        $object = new ArrayObject(['foo' => $foo, ArrayObject::ARRAY_AS_PROPS, RecursiveArrayIterator::class]);
 
         $copy = deep_copy($object);
 
@@ -412,7 +412,7 @@ class DeepCopyTest extends TestCase
     {
         $object = new f011\ArrayObjectExtended('foo');
         $object->setFlags(ArrayObject::ARRAY_AS_PROPS);
-        $object->setIteratorClass(\RecursiveArrayIterator::class);
+        $object->setIteratorClass(RecursiveArrayIterator::class);
         $object['a'] = new f011\ArrayObjectExtended('bar');
 
         $copy = deep_copy($object);
