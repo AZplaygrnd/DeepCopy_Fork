@@ -37,10 +37,15 @@
     "autoload-dev": {
         "psr-4": {
             "DeepCopyTest\\": "tests/DeepCopyTest/Unit",
+            "PHPBenchDeepCopyTest\\": "tests/DeepCopyTest/Benchmark",
             "DeepCopy\\": "fixtures/"
         }
     },
     "config": {
         "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit",
+        "bench": "phpbench run tests/DeepCopyTest/Benchmark --report=aggregate"
     }
 }
