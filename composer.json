@@ -11,11 +11,12 @@
         "object graph"
     ],
     "require": {
-        "php": "^8.0"
+        "php": "^8.2"
     },
     "require-dev": {
         "doctrine/collections": "^1.6.8",
         "doctrine/common": "^2.13.3 || ^3.2.2",
+        "phpbench/phpbench": "^1.2",
         "phpspec/prophecy": "^1.10",
         "phpspec/prophecy-phpunit": "^2.2",
         "phpunit/phpunit": "^7.5.20 || ^8.5.23 || ^9.5.13"
