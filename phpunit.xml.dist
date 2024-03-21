@@ -12,7 +12,7 @@
   
   <testsuites>
     <testsuite name="Test suite">
-      <directory>./tests/DeepCopyTest</directory>
+      <directory>./tests/DeepCopyTest/Unit</directory>
     </testsuite>
   </testsuites>
   

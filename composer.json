@@ -35,7 +35,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "DeepCopyTest\\": "tests/DeepCopyTest/",
+            "DeepCopyTest\\": "tests/DeepCopyTest/Unit",
             "DeepCopy\\": "fixtures/"
         }
     },
