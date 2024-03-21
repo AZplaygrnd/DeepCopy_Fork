@@ -29,7 +29,8 @@
             "DeepCopy\\": "src/DeepCopy/"
         },
         "files": [
-            "src/DeepCopy/deep_copy.php"
+            "src/DeepCopy/deep_copy.php",
+            "src/DeepCopy/deep_copy_weak_map.php"
         ]
     },
     "autoload-dev": {
